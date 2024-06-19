@@ -6,7 +6,6 @@ const Link = ({ topic, summary }: { topic: string; summary: string }) => {
     <li
       className="flex flex-col gap-100 pt-400 pb-[27px] first:pt-[0] last:pb-[0]"
       key={topic}
-      aria-labelledby={labelId}
     >
       <h2 className="text-white-off font-extrabold text-xl leading-6 hover:text-orange-soft cursor-pointer">
         <a
@@ -50,7 +49,7 @@ export default function Aside1() {
       >
         New
       </h1>
-      <ul className="flex flex-col divide-y-[1px] divide-[#5E607A]" aria-label="List of links to new articles">
+      <ul className="flex flex-col divide-y-[1px] divide-[#5E607A]">
         {links.map((link) => (
           <Link key={link.topic} {...link}></Link>
         ))}

@@ -25,7 +25,7 @@ export default function Header({
   const mobileClassesNav = `flex-col absolute bg-white-off z-20 w-[256px] h-screen top-[0] right-[0] ${
     open ? "" : "sr-only"
   }`;
-  const wideScreenClassesNav = `tablet:static tablet:bg-none tablet:z-0 tablet:w-auto tablet:h-auto`;
+  const wideScreenClassesNav = `tablet:static tablet:bg-none tablet:z-0 tablet:w-auto tablet:h-auto tablet:p-[0]`;
   const toggleMenuAndChangeFocus = () => {
     onOpenChange(!open);
   };
@@ -97,7 +97,7 @@ export default function Header({
           } tablet:flex-row tablet:gap-500`}
         >
           {links.map((link) => (
-            <li aria-label={link} key={link}>
+            <li key={link}>
               <a
                 className="text-blue-dark text-lg leading-6 tablet:text-[15px] tablet:leading-[26px] tablet:text-blue-grayish-dark hover:text-red-soft"
                 href=""

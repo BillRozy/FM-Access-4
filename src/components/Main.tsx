@@ -15,12 +15,12 @@ export default function Main() {
         ></img>
       </picture>
 
-      <h1
+      <h2
         id={sectionLabelId}
         className="mt-100 desktop:mt-[0] text-[40px] leading-[40px] font-extrabold grow shrink basis-[350px] desktop:text-[56px] desktop:leading-[56px] desktop:py-[7px]"
       >
         The Bright Future of Web 3.0?
-      </h1>
+      </h2>
       <div className="flex flex-col gap-300 grow shrink basis-[350px] justify-between">
         <p className="font-body text-blue-grayish-dark">
           We dive into the next evolution of the web that claims to put the

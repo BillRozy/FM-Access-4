@@ -18,12 +18,12 @@ const Link = ({
 }) => {
   const sectionId = useId()
   return (
-    <li className="flex gap-300 basis-[343px]" aria-labelledby={sectionId}>
+    <li className="flex gap-300 basis-[343px]">
       <img className="basis-[100px] max-w-[100px] grow-0 shrink-0" src={imgPath} alt={imgAlt}></img>
       <section className="flex flex-col gap-[12px] grow justify-between" aria-labelledby={sectionId}>
-        <span className="text-red-soft text-[32px] leading-[32px] font-bold">0{index + 1}</span>
+        <h2 className="text-red-soft text-[32px] leading-[32px] font-bold">0{index + 1}</h2>
         <a id={sectionId} className="font-extrabold text-lg leading-6 hover:text-red-soft" href="">{topic}</a>
-        <p className="font-body text-blue-grayish-dark" aria-labelledby={sectionId}>{summary}</p>
+        <p className="font-body text-blue-grayish-dark">{summary}</p>
       </section>
     </li>
   )
@@ -52,7 +52,7 @@ export default function Aside2() {
   ];
   return (
     <aside className="desktop:mt-200" aria-label="Section with links to articles">
-      <ol className="flex flex-wrap gap-x-[30px] gap-y-400 justify-between" aria-label="List of links to articles">
+      <ol className="flex flex-wrap gap-x-[30px] gap-y-400 justify-between">
         {links.map((link, index) => <Link key={link.topic} {...link} index={index}></Link>)}
       </ol>
     </aside>
