@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
+  --orange-soft: hsl(35, 77%, 62%);
+  --red-soft: hsl(5, 85%, 63%);
+  --white-off: hsl(36, 100%, 99%);
+  --blue-grayish: hsl(233, 8%, 79%);
+  --blue-grayish-dark: hsl(236, 13%, 42%);
+  --blue-dark: hsl(240, 100%, 5%);
+  --blue-dark-opaque: hsla(240, 100%, 5%, 0.5);
+
+
   font-size: 16px;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -21,4 +32,9 @@ html {
 
 body {
   min-height: 100%;
+}
+
+.font-body {
+  font-size: 15px;
+  line-height: 26px;
 }
